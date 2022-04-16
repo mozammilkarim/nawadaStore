@@ -12,7 +12,7 @@ const dotenv=require("dotenv")
 const error=require("./middleware/error")
 const path=require("path")
 // config
-if (process.env.NODE.ENV!=="PRODUCTION") {
+if (process.env.NODE_ENV!=="PRODUCTION") {
     // we need to include this only to run on localhost
     const dotenv=require("dotenv")
     dotenv.config({path:"backend/config/config.env"})
